@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;  
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(to right,  rgb(16, 121, 6), hsl(157, 67%, 57%)); /* Direção e cores */
+    flex-direction: row;  
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+   .simbolo{
+    width: 30vw;
+   }
+}
+
+.apresentacao{
+    font-size: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    margin-top: 6vh;
+    margin-left: 5vw;
+    h3{
+        margin-bottom: 1vh;
+    }
+    p{
+        margin-bottom: 2vh;
+    }
+    hr{
+        border: solid 1px black;
+        width: 75vw;
+    }
+}
+.instrucoes{
+    font-size: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    h3{
+        margin-bottom: 1vh;
+    }
+    p{
+        margin-bottom: 2vh;
+    }
+}
+
+.botao1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    margin-top: 4vh;
+}
+.iniciar{
+    
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    
+    background-color: hsl(146, 61%, 38%); 
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px hsl(155, 66%, 23%); 
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-items: center;
+}
+
+.iniciar:active {
+    box-shadow: 0 2px hsl(143, 73%, 22%); 
+    transform: translateY(3px); 
+}
+
+.iniciar:hover {
+    background-color: #41b922;
+}
+@media (max-width: 768px) {
+    .logo {
+        height: 30vh; 
+    }
+
+    .simbolo {
+        width: 50vw; 
+    }
+
+    .apresentacao, .instrucoes {
+        margin-left: 3vw; 
+        font-size: 2.5vh; 
+
+    .apresentacao hr {
+        width: 90vw;
+    }
+}
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        height: 25vh; 
+        flex-direction: column; 
+    }
+
+    .simbolo {
+        width: 70vw;
+    }
+
+    .apresentacao, .instrucoes {
+        font-size: 3vh; 
+        margin-left: 2vw; 
+        text-align: center; 
+    }
+
+    .apresentacao hr {
+        width: 90vw; 
+    }
+
+    .botao1 {
+        margin-top: 6vh;
+    }
+
+    .iniciar {
+        width: 80%; 
+        padding: 12px 20px;
+        font-size: 16px; 
+    }
+}
